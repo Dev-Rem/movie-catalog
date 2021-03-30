@@ -1,0 +1,108 @@
+My project is a web application that lists various kind of movies from a database
+using ASP.NET CORE. The app allows for adding of movies to be displayed and it also allows modifying and deletion
+of added movies.
+
+
+To create a .NET web application you need a project folder
+Open Terminal on Mac or Git bash on Windows and "cd" into project folder and run this command
+"dotnet new mvc -o MvcMovie" to create an MVC web project. I am using the visual studio code IDE.
+To open the project in the IDE run the command "code -r MvcMovie" Terminal on Mac or Git bash on Windows,
+everything is setup for development.
+
+                        Agile process
+
+Title:
+    Add a controller to the project
+Description: 
+    Create the  Controller for the application MoviesController.cs
+    in "MvcWebApp\MvcMovie\Controllers".
+Due-Date:
+    2020-05-07 (Completed)
+
+
+Title:
+    Add view for our Controllers
+Description: 
+    Create the view for the Index Controller in "MvcWebApp\MvcMovie\Views\Movies\index.cshtml"
+    using the Razor view files to cleanly encapsulate the process of generating HTML responses to a client.
+Due-Date:
+    2020-05-08 (Completed)
+
+
+Title:
+    Add search functionality
+Description: 
+    Add search bar above listing, with button associated.
+    Update Index function to enable search.
+Due-Date:
+    2020-05-11 (Completed)
+
+    
+Title:
+    Add the model classes for our project
+Description: 
+    Using the Entity Framework Core to work with database, and creating ORM (object-relational mapping) classes 
+    that define properties of data that will be stored in the database in MvcWebApp\MvcMovie\Models\Movies.cs
+Due-Date:
+    2020-05-13 (Completed)
+
+    
+Title:
+    Add NuGet packages
+Description: 
+    Install the necessary tools and packages for Sqlit, EF core, SQLserver and visual studio code generator
+    run the following command Terminal on Mac or Git bash on Windows.
+    "dotnet tool install --global dotnet-ef"
+    "dotnet tool install --global dotnet-aspnet-codegenerator"
+    "dotnet add package Microsoft.EntityFrameworkCore.SQLite"
+    "dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design"
+    "dotnet add package Microsoft.EntityFrameworkCore.Design"
+    "dotnet add package Microsoft.EntityFrameworkCore.SqlServer"
+Due-Date:
+    2020-05-13 (Completed)
+
+    
+Title:
+    Add database context
+Description: 
+    Create a database context to coordinate the EF core CRUD (Create, Read, Update, Delete) functionalities
+    for the Movies model in MvcWebApp\MvcMovie\Data\MvcMovieContext.cs
+Due-Date:
+    2020-05-15 (Completed)
+
+
+Title:
+    scaffold movie pages
+Description: 
+    Use the scaffolding tool to produce Create, Read, Update, and Delete (CRUD) pages for the movie model.
+    with the command "dotnet aspnet-codegenerator controller -name MoviesController -m Movie -dc MvcMovieContext 
+    --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries"
+Due-Date:
+    2020-05-15 (Completed)
+
+
+Title:
+    Write unit test for the movie model
+Description: 
+    Each field should be tested.
+    Running of unit test can be done by running the "dotnet test" in the terminal.
+Due-Date:
+    2020-05-15 (Completed)
+
+
+Title:
+    Run app and check CRUD functionalities
+Description: 
+     Check all controllers and views for correctness run app and check working functionalities
+Due-Date:
+    2020-05-15 (Completed)
+
+
+   
+
+    
+
+
+
+
+
